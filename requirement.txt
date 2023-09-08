@@ -35,6 +35,7 @@ executing==1.2.0
 fastjsonschema==2.17.1
 filelock==3.12.2
 fqdn==1.5.1
+gunicorn==21.2.0
 gyp==0.1
 httplib2==0.20.2
 idna==3.3
