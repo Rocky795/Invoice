@@ -1,0 +1,23 @@
+{%extends './index.html'%}
+
+{%block content%}
+<div class="ms-3" style="width:40%;max-width: 100%;position:absolute;right:2%;">
+    <h1 class="bg-gray">2nd - Add Company Details</h1>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <form action="" method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+
+        <button class="btn btn-primary" name="update_company">Submit</button>
+    </form>
+</div>
+
+
+ 
+{%endblock content%}

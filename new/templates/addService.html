@@ -1,0 +1,62 @@
+{%extends './index.html'%}
+
+{%block content%}
+<div class="row">
+    <div class="col-4">
+
+        <div class="ms-3" style="max-width: 100%;">
+            <h1 class="bg-gray">3rd - Add Service Details</h1>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="" method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+
+                <button class="btn btn-primary" name="save_service">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Client</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Handled By </th>
+                <th scope="col">email</th>
+                <th scope="col">phone</th>
+                
+                <th scope="col">Action</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                {%for d in data%}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{d.client}}</td>
+                <td>{{d.company_name}}</td>
+                <td>{{d.handle_by}}</td>
+                <td>{{d.email}}</td>
+                <td>{{d.phone}}</td>
+                
+                <td><a class="btn btn-primary" href="/updatecompany/{{d.id}}" >Update</a><a class="btn btn-warning" href="/deletecompany/{{d.id}}">Delete</a></td>
+              </tr>
+              {%endfor%}
+              
+            </tbody>
+          </table>
+    </div>
+
+</div>
+
+
+
+{%endblock content%}

@@ -1,0 +1,99 @@
+{%extends './index.html'%}
+
+{%block content%}
+
+
+
+
+
+<h1 class="text-center">Selected Client Details</h1>
+<div class="col-6">
+  <h2 class="text-center">Client Detail</h2>
+  <table class="table mt-4">
+    
+    <tbody>
+
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="row">{{client.id}}</th>
+      </tr>
+      <tr>
+        <th scope="col">Company Name</th>
+        <td>{{client.company_name}}</td>
+      </tr>
+      <tr>
+        
+          <th scope="col">GST Number</th>
+
+          <td>{{client.gst_number}} </td>
+      </tr>
+      <tr>
+        <th scope="col">Country</th>
+        <td>{{client.country}}</td>
+      </tr>
+      <tr>
+        <th scope="col">State</th>
+        <td>{{client.state}}</td>
+      </tr>
+      <tr>
+        <th scope="col">Address</th>
+        <td>{{client.address}}</td>
+      </tr>
+      <tr>
+        <th scope="col">Created At</th>
+        <td>{{client.created_at}}</td>
+
+
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+
+div class="col-6">
+  <h2 class="text-center">Client Detail</h2>
+  <table class="table mt-4">
+    
+    <tbody>
+
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="row">{{client.id}}</th>
+      </tr>
+      <tr>
+        <th scope="col">Compnay Name</th>
+        <td>{{client.company_name}}</td>
+      </tr>
+      <tr>
+        
+          <th scope="col">GST Number</th>
+
+          <td>{{client.gst_number}} </td>
+      </tr>
+      <tr>
+        <th scope="col">Country</th>
+        <td>{{client.country}}</td>
+      </tr>
+      <tr>
+        <th scope="col">State</th>
+        <td>{{client.state}}</td>
+      </tr>
+      <tr>
+        <th scope="col">Address</th>
+        <td>{{client.address}}</td>
+      </tr>
+      <tr>
+        <th scope="col">Created At</th>
+        <td>{{client.created_at}}</td>
+
+
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+{%endblock%}

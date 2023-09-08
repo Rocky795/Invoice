@@ -1,0 +1,45 @@
+{%extends './index.html'%}
+
+{%block content%}
+
+
+
+
+
+<div class="col-12">
+  <h1 class="text-center">Review Client Details</h1>
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Compnay Name</th>
+        <!-- <th scope="col">Company Name</th> -->
+        <th scope="col">GST Number</th>
+        <th scope="col">email</th>
+        <th scope="col">Created At</th>
+
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {%for d in data%}
+      <tr>
+        <th scope="row">{{d.id}}</th>
+        <td>{{d.company_name}}</td>
+        <td>{{d.gst_number}}</td>
+        <td>{{d.email}}</td>
+        <td>{{d.created_at}}</td>
+        <!-- <td>{{d.phone}}</td> -->
+
+        <td><a class="btn btn-info m-1" href="/reviewinvoice/{{d.id}}">Show</a><a class="btn btn-primary m-1"
+            href="/updatecompany/{{d.id}}">Update</a><a class="btn btn-warning m-1"
+            href="/deletecompany/{{d.id}}">Delete</a></td>
+      </tr>
+      {%endfor%}
+
+    </tbody>
+  </table>
+</div>
+
+{%endblock%}

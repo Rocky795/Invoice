@@ -1,0 +1,67 @@
+{%extends './index.html'%}
+
+{%block content%}
+<h1 class="text-center">Dashboard</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+    </div>
+</div>
+
+
+<div class="container marketing mt-4">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            </svg>
+            <h3 class="fw-normal">Add Invoice</h3>
+            
+            <p><a class="btn btn-secondary" href="{%url "addinvoice" %}">Add Invoice &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            </svg>
+            <h3 class="fw-normal">Add Service Provider</h3>
+           
+            <p><a class="btn btn-secondary" href="{%url "addservice" %}">Add Service &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            </svg>
+            <h3 class="fw-normal">Review Invoice</h3>
+            
+            <p><a class="btn btn-secondary" href="{%url "reviewinvoice" %}">Review Invoice &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            </svg>
+            <h3 class="fw-normal">Invoice Repoat</h3>
+            
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+
+
+</div>
+
+
+
+{%endblock content%}
