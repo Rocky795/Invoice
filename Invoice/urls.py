@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from new import views
 
 urlpatterns = [
@@ -31,3 +32,6 @@ urlpatterns = [
     path('reviewinvoice/',views.ReviewInvoice,name="reviewinvoice"),
     path('reviewinvoice/<int:pk>/',views.view,name="")
 ]
+
+
+# urlpatterns+=staticfiles_urlpatterns
