@@ -88,8 +88,8 @@ DATABASES = {
 
 # postgres://invoice_8oaz_user:FOjlsAEi2hXVN07CN6qJqMom7Iw0B63e@dpg-cjtecpthtt0c73chfqi0-a.oregon-postgres.render.com/invoice_8oaz
 
-# DATABASES["default"] = dj_database_url.parse(
-#     "postgres://invoice_8oaz_user:FOjlsAEi2hXVN07CN6qJqMom7Iw0B63e@dpg-cjtecpthtt0c73chfqi0-a.oregon-postgres.render.com/invoice_8oaz")
+DATABASES["default"] = dj_database_url.parse(
+    "postgres://invoice_8oaz_user:FOjlsAEi2hXVN07CN6qJqMom7Iw0B63e@dpg-cjtecpthtt0c73chfqi0-a.oregon-postgres.render.com/invoice_8oaz")
 
 
 # Password validation
