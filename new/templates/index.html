@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/static/CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/bootstrap.css' %}">
 
 </head>
 
@@ -16,9 +17,12 @@
     {%endblock content%}
 
 
-    <script src="/static/JS/jquery.js"></script>
+    <!-- <script src="/static/JS/jquery.js"></script>
     <script src="/static/JS/popper.js"></script>
-    <script src="/static/JS/bootstrap.js"></script>
+    <script src="/static/JS/bootstrap.js"></script> -->
+    <script type="text/javascript" src="{% static 'JS/jquery.js' mimetype='application/javascript' %}"></script>
+    <script type="text/javascript" src="{%static 'JS/propper.js' mimetype='application/javascript'%}" ></script>
+    <script type="text/javascript" src="{%static 'JS/bootstrap.js' mimetype='application/javascript'%}" ></script>
 
 </body>
 
