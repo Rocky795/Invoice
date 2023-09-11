@@ -14,7 +14,6 @@ from pathlib import Path
 # import dj_database_url
 
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +27,8 @@ SECRET_KEY = 'django-insecure-0)poe$$t#q2(86s1)i@7q9k1h&ap7$mz=e_sx_1x(7f7fx2$xl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['invoice-k3gx.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['invoice-k3gx.onrender.com',
+                 'localhost', '127.0.0.1','*','.vercel.app']
 
 
 # Application definition
